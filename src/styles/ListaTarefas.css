@@ -17,6 +17,17 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
   }
+
+  .calculadora input {
+    width: 80%; /* Define a largura do campo de entrada */
+    max-width: 300px; /* Limita a largura máxima para tamanhos maiores */
+    padding: 10px; /* Adiciona padding para espaçamento interno */
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box; /* Garante que o padding não afete a largura total */
+}
+
   
   input {
     padding: 10px;

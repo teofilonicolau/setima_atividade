@@ -17,7 +17,7 @@ function App() {
     <Router>
       <div className="App">
         <h1>Atividades React</h1>
-        <nav>
+        <nav className="navbar">
           <ul>
             <li><Link to="/contador">Contador Simples</Link></li>
             <li><Link to="/alteracao-cor-fundo">Alteração de Cor de Fundo</Link></li>
@@ -47,5 +47,6 @@ function App() {
     </Router>
   );
 }
+
 
 export default App;

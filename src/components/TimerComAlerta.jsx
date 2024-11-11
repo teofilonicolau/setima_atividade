@@ -7,19 +7,26 @@ const TimerComAlerta = () => {
 
   useEffect(() => {
     let interval = null;
-    if (ativo) {
+
+    if (ativo && segundos > 0) {
       interval = setInterval(() => {
-        setSegundos(segundos => segundos - 1);
+        setSegundos((prevSegundos) => prevSegundos - 1);
       }, 1000);
-    } else if (!ativo && segundos !== 0) {
-      clearInterval(interval);
-    }
-    if (segundos === 0 && ativo) {
+    } else if (segundos === 0 && ativo) {
       alert("O tempo acabou!");
       setAtivo(false);
     }
+
     return () => clearInterval(interval);
   }, [ativo, segundos]);
+
+  const iniciarTimer = () => {
+    if (segundos > 0) {
+      setAtivo(true);
+    } else {
+      alert("Defina um valor maior que zero para iniciar o timer.");
+    }
+  };
 
   const resetar = () => {
     setSegundos(0);
@@ -35,7 +42,7 @@ const TimerComAlerta = () => {
         value={segundos}
         onChange={(e) => setSegundos(Number(e.target.value))}
       />
-      <button onClick={() => setAtivo(true)}>Iniciar</button>
+      <button onClick={iniciarTimer}>Iniciar</button>
       <button onClick={() => setAtivo(false)}>Pausar</button>
       <button onClick={resetar}>Resetar</button>
     </div>
