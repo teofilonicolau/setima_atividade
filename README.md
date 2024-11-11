@@ -89,7 +89,47 @@ O projeto está organizado da seguinte maneira:
 
 ```
 
-/src /components ContadorSimples.js AlteracaoCorFundo.js ListaTarefas.js Temporizador.js FiltroLista.js FormularioRegistro.js RequisicaoDados.js GaleriaImagens.js TimerComAlerta.js TabsNavegaveis.js App.js index.js /styles App.css
+
+Atividade - 7
+├── public
+│   └── index.html
+├── src
+│   ├── components
+│   │   ├── ContadorSimples.jsx
+│   │   ├── AlteracaoCorFundo.jsx
+│   │   ├── ListaTarefas.jsx
+│   │   ├── Temporizador.jsx
+│   │   ├── FiltroLista.jsx
+│   │   ├── FormularioRegistro.jsx
+│   │   ├── RequisicaoDados.jsx
+│   │   ├── GaleriaImagens.jsx
+│   │   ├── TimerComAlerta.jsx
+│   │   ├── TabsNavegaveis.jsx
+│   ├── assets
+│   │   ├── │
+│   │   │   ├── pernalonga.png
+│   │   │   ├── frajola.jpg
+│   │   │   └── patolino.svg
+│   ├── styles
+│   │   ├── App.css
+│   │   ├── ContadorSimples.css
+│   │   ├── AlteracaoCorFundo.css
+│   │   ├── ListaTarefas.css
+│   │   ├── Temporizador.css
+│   │   ├── FiltroLista.css
+│   │   ├── FormularioRegistro.css
+│   │   ├── RequisicaoDados.css
+│   │   ├── GaleriaImagens.css
+│   │   ├── TimerComAlerta.css
+│   │   ├── TabsNavegaveis.css
+│   ├── App.js
+│   └── index.js
+├── package.json
+└── vite.config.js
+
+
+
+
 ```
 
 ## 
